@@ -10,7 +10,18 @@
     tools:context="blackbox.blackbox.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/riddle"
+        android:text="This will be where the riddle is"
+        android:background="@drawable/riddle_back"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userguess"
+        android:inputType="textNoSuggestions"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/riddle" />
 </RelativeLayout>
