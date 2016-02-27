@@ -9,29 +9,76 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="blackbox.blackbox.MainActivity">
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/riddle"
-        android:text="This will be where the riddle is"
-        android:background="@drawable/riddle_back"
-        android:gravity="center" />
+        android:id="@+id/top_section"
+        android:paddingBottom="80dp" >
 
-    <EditText
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_account_circle_white_24dp"
+            android:background="@null"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/userguess"
-        android:inputType="textNoSuggestions"
-        android:gravity="center_horizontal"
-        android:layout_below="@id/riddle" />
+        android:id="@+id/middle_section"
+        android:layout_below="@id/top_section"
+        >
 
-    <Button
-        android:layout_width="200dp"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/riddle"
+            android:text="This will be where the riddle is"
+            android:background="@drawable/riddle_back"
+            android:minHeight="100dp"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/userguess"
+            android:inputType="textNoSuggestions"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/riddle" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/usersubmit"
+            android:text="Submit"
+            android:gravity="center"
+            android:layout_below="@id/userguess" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:id="@+id/usersubmit"
-        android:text="Submit"
-        android:gravity="center"
-        android:layout_below="@id/userguess" />
+        android:layout_alignParentBottom="true" >
+
+        <!--<ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />-->
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingsFAB"
+            android:src="@drawable/ic_settings_white_24dp"
+            android:layout_alignParentRight="true"
+            android:clickable="true"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>
