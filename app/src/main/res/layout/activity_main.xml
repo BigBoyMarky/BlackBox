@@ -60,6 +60,17 @@
             android:gravity="center"
             android:layout_below="@id/userguess" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/userskip"
+            android:text="Skip"
+            android:background="@android:color/transparent"
+            android:stateListAnimator="@null"
+            android:gravity="center"
+            android:layout_below="@id/usersubmit" />
+
     </RelativeLayout>
 
     <RelativeLayout
