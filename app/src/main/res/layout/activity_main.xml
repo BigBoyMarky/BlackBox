@@ -88,11 +88,37 @@
         <android.support.design.widget.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/settingsQuit"
+            android:src="@drawable/ic_power_settings_new_white_24dp"
+            fab:backgroundTint="#303030"
+            android:elevation="0dp"
+            fab:borderWidth="0dp"
+            android:layout_alignParentRight="true"
+            android:clickable="true" />
+            <!--fab:backgroundTint="#80ffffff"-->
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:id="@+id/settingsFAB"
+            android:src="@drawable/ic_settings_white_24dp"
+            fab:backgroundTint="#303030"
+            android:elevation="0dp"
+            fab:borderWidth="0dp"
+            android:layout_alignParentRight="true"
+            android:clickable="true" />
+            <!--fab:backgroundTint="#80ffffff"-->
+
+        <!--
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ANOTHERSETTING"
             android:src="@drawable/ic_settings_white_24dp"
             fab:backgroundTint="#80ffffff"
             android:layout_alignParentRight="true"
             android:clickable="true"/>
+        -->
 
     </RelativeLayout>
 
