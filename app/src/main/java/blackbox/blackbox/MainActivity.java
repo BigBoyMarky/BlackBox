@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         System.out.println("Creating main activity");
 
+
+
         // settings menu
         FloatingActionButton settingsFAB = (FloatingActionButton) findViewById(R.id.settingsFAB);
         settingsFAB.setOnClickListener(new View.OnClickListener() {
