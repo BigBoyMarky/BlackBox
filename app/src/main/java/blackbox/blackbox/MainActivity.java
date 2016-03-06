@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 
+import com.google.api.client.util.store.DataStore;
+
 public class MainActivity extends AppCompatActivity {
 
     boolean isSettingsOpen = false; // flag to toggle the settings menu
@@ -16,8 +18,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         System.out.println("Creating main activity");
-
-
 
         // settings menu
         FloatingActionButton settingsFAB = (FloatingActionButton) findViewById(R.id.settingsFAB);
